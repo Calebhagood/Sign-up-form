@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="main-left">
+        <div id="logo">
+          <img id="logoimage" src="images/odin-lined.png" alt="Odin logo" />
+          <p id="logotext">ODIN</p>
+        </div>
+      </div>
+      <div id="main-right">
+        <p class="ptext">
+          This is not a real online service! This is a recreation of the TOP
+          Sign-up Form assignment example. I am creating this to achieve my
+          dreams of becoming a Web Developer. Sign up now to support me!
+        </p>
+        <br />
+        <p class="ptext">You know you want to.</p>
+        <br /><br />
+        <form action="" method="post">
+          <fieldset id="main-form">
+            <div class="inputs">
+              <legend id="legend">Let's do this!</legend>
+              <div class="inputDiv">
+                <label class="label" for="firstName">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  minlength="1"
+                  maxlength="25"
+                  required
+                />
+              </div>
+              <div class="inputDiv">
+                <label class="label" for="lastName">LAST NAME</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  minlength="1"
+                  maxlength="25"
+                  required
+                />
+              </div>
+              <div class="inputDiv">
+                <label class="label" for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
+              </div>
+              <div class="inputDiv">
+                <label class="label" for="phone">PHONE NUMBER</label>
+                <input type="text" name="phone" pattern="/^\d{10}$/" required />
+              </div>
+              <div class="inputDiv">
+                <label class="label" for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="inputDiv">
+                <label class="label" for="confirmPassword"
+                  >CONFIRM PASSWORD</label
+                >
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id=""
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit">CREATE ACCOUNT</button>
+        </form>
+
+        <p id="finalp">Already have an account? <a href="">Log in</a></p>
+      </div>
+    </main>
+  </body>
+</html>
